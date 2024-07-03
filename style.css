@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #f0f0f0;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color:#3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: #601cfc;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20240102/pngtree-hexagonal-textured-background-with-overlapping-layers-of-dark-abstract-black-texture-image_13881222.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main p{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.main h2{
+    color:#601cfc ;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight:700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom:30px ;
+}
+
+.main-btn{
+    color:#fff ;
+    text-decoration:none;
+    background-color: #601cfc;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition:0.5s ease;
+} 
+
+.main-btn:hover{
+    background-color:#0a49f6 ;
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:1.7em;
+    padding-right: 30px;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:#0a49f6;
+    font-size:2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.card{
+    background-color: #fff;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 20%) ;
+    border: radius 10px;
+    padding: 25px;
+    margin:15px;
+    transition: 0.6s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #3a6cf4;
+    font-size:8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin:10px;
+}
+
+.projects{
+    background-color: rgb(38, 52, 56) ;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 18em;
+    width: 28em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+    opacity: 0.7;
+}
+
+.project-image{
+    width: 100%;
+}
+
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top:10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover{
+    color:#601cfc
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000;
+}
+
+.contact .info p{
+    font-size: 1.3em;;
+}
+.contact .content .card{
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #1a1e1e;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color:#3a6cf4;
+}
+.footer  .social-icons a{
+    font-size: 1.5em;
+    padding:0 12px 0 0;
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 10px 100px; /* Adjust padding for smaller screens */
+    }
+    .content {
+        padding: 50px 100px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 10px 50px; /* Further adjust padding for smaller screens */
+    }
+    .content {
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+    .card {
+        width: calc(100% - 30px); /* Adjust card width for smaller screens */
+        margin: 15px auto; /* Center cards */
+    }
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        text-align: center; /* Center text */
+    }
+    .footer-title {
+        margin-bottom: 20px; /* Add space between footer title and social icons */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 30px; /* Further adjust padding for smaller screens */
+    }
+    .main h2 {
+        font-size: 3em; /* Decrease heading font size for smaller screens */
+    }
+}
+
+/* Add more media queries as needed for smaller screen sizes */
